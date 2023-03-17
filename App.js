@@ -1,5 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import Button from './components/Button';
 import ImageViewer from './components/ImageViewer';
 
 export default function App() {
@@ -8,7 +9,10 @@ export default function App() {
     <View style={styles.container}>
     <View style={styles.imageContainer}>
       <ImageViewer PlaceholderImageSource={PlaceholderImage}/>
-
+    </View>
+    <View style={styles.footerContainer}>
+      <Button theme="primary" label='Choose a photo' />
+      <Button label='Use this photo' />
     </View>
       <StatusBar style="auto" />
     </View>
@@ -26,5 +30,9 @@ const styles = StyleSheet.create({
     flex:1,
     paddingTop:50
   },
+  footerContainer:{
+    flex: 1/3,
+    alignItems:'center'
+  }
 
 });
