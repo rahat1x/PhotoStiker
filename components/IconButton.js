@@ -7,7 +7,7 @@ const IconButton = ({ icon, label, onPress }) => {
         <View>
             <Pressable style={styles.IconButton} onPress={onPress}>
                 <MaterialIcons name={icon} size={24}  color="#fff"/>
-                <Text style={styles.IconButtonLabel} onPress>{label}</Text>
+                <Text style={styles.IconButtonLabel} >{label}</Text>
             </Pressable>
         </View>
     )
